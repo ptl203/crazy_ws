@@ -55,6 +55,8 @@ include crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/progress.m
 
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs: /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/ranger.js
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs: /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/stateEstimate.js
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs: /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/status.js
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs: /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/nodeReady.js
 
 
 /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/ranger.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
@@ -69,9 +71,23 @@ crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs: /home/bitcraze/crazy_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from crazy_msgs/stateEstimate.msg"
 	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg
 
+/home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/status.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/status.js: /home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg
+/home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/status.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from crazy_msgs/status.msg"
+	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg
+
+/home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/nodeReady.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/nodeReady.js: /home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg
+/home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/nodeReady.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from crazy_msgs/nodeReady.msg"
+	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg
+
 crazy_msgs_generate_messages_nodejs: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs
 crazy_msgs_generate_messages_nodejs: /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/ranger.js
 crazy_msgs_generate_messages_nodejs: /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/stateEstimate.js
+crazy_msgs_generate_messages_nodejs: /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/status.js
+crazy_msgs_generate_messages_nodejs: /home/bitcraze/crazy_ws/devel/share/gennodejs/ros/crazy_msgs/msg/nodeReady.js
 crazy_msgs_generate_messages_nodejs: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build.make
 
 .PHONY : crazy_msgs_generate_messages_nodejs

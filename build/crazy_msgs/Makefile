@@ -112,6 +112,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -123,17 +134,6 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -211,6 +211,21 @@ rosgraph_msgs_generate_messages_lisp: crazy_msgs/CMakeFiles/rosgraph_msgs_genera
 rosgraph_msgs_generate_messages_lisp/fast:
 	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/rule:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/rule
+.PHONY : crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/rule
+
+# Convenience name for target.
+_crazy_msgs_generate_messages_check_deps_nodeReady: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/rule
+
+.PHONY : _crazy_msgs_generate_messages_check_deps_nodeReady
+
+# fast build rule for target.
+_crazy_msgs_generate_messages_check_deps_nodeReady/fast:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/build.make crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/build
+.PHONY : _crazy_msgs_generate_messages_check_deps_nodeReady/fast
 
 # Convenience name for target.
 crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
@@ -378,6 +393,66 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
+crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule
+
+# Convenience name for target.
+crazy_msgs_genpy: crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule
+
+.PHONY : crazy_msgs_genpy
+
+# fast build rule for target.
+crazy_msgs_genpy/fast:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build
+.PHONY : crazy_msgs_genpy/fast
+
+# Convenience name for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+crazy_msgs_generate_messages_cpp: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : crazy_msgs_generate_messages_cpp
+
+# fast build rule for target.
+crazy_msgs_generate_messages_cpp/fast:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build
+.PHONY : crazy_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+crazy_msgs_generate_messages_nodejs: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : crazy_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+crazy_msgs_generate_messages_nodejs/fast:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build
+.PHONY : crazy_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
 crazy_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : crazy_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
@@ -451,6 +526,21 @@ _crazy_msgs_generate_messages_check_deps_stateEstimate: crazy_msgs/CMakeFiles/_c
 _crazy_msgs_generate_messages_check_deps_stateEstimate/fast:
 	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/build.make crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/build
 .PHONY : _crazy_msgs_generate_messages_check_deps_stateEstimate/fast
+
+# Convenience name for target.
+crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/rule:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/rule
+.PHONY : crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/rule
+
+# Convenience name for target.
+_crazy_msgs_generate_messages_check_deps_status: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/rule
+
+.PHONY : _crazy_msgs_generate_messages_check_deps_status
+
+# fast build rule for target.
+_crazy_msgs_generate_messages_check_deps_status/fast:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/build.make crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/build
+.PHONY : _crazy_msgs_generate_messages_check_deps_status/fast
 
 # Convenience name for target.
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/rule:
@@ -527,66 +617,6 @@ crazy_msgs_generate_messages_py/fast:
 	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/build
 .PHONY : crazy_msgs_generate_messages_py/fast
 
-# Convenience name for target.
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-crazy_msgs_generate_messages_cpp: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : crazy_msgs_generate_messages_cpp
-
-# fast build rule for target.
-crazy_msgs_generate_messages_cpp/fast:
-	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build
-.PHONY : crazy_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule:
-	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule
-
-# Convenience name for target.
-crazy_msgs_genpy: crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule
-
-.PHONY : crazy_msgs_genpy
-
-# fast build rule for target.
-crazy_msgs_genpy/fast:
-	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build
-.PHONY : crazy_msgs_genpy/fast
-
-# Convenience name for target.
-crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-crazy_msgs_generate_messages_nodejs: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : crazy_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-crazy_msgs_generate_messages_nodejs/fast:
-	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build
-.PHONY : crazy_msgs_generate_messages_nodejs/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -599,6 +629,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... _crazy_msgs_generate_messages_check_deps_nodeReady"
 	@echo "... install/local"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -612,22 +643,23 @@ help:
 	@echo "... crazy_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
+	@echo "... crazy_msgs_genpy"
+	@echo "... crazy_msgs_generate_messages_cpp"
+	@echo "... test"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... crazy_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... _crazy_msgs_generate_messages_check_deps_ranger"
 	@echo "... crazy_msgs_generate_messages"
 	@echo "... install/strip"
 	@echo "... _crazy_msgs_generate_messages_check_deps_stateEstimate"
+	@echo "... _crazy_msgs_generate_messages_check_deps_status"
 	@echo "... crazy_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... crazy_msgs_gennodejs"
 	@echo "... crazy_msgs_geneus"
 	@echo "... crazy_msgs_generate_messages_py"
-	@echo "... crazy_msgs_generate_messages_cpp"
-	@echo "... crazy_msgs_genpy"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... crazy_msgs_generate_messages_nodejs"
-	@echo "... test"
 .PHONY : help
 
 

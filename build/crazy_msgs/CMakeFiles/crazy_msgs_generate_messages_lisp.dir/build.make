@@ -55,6 +55,8 @@ include crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/progress.mak
 
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp: /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/ranger.lisp
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp: /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/stateEstimate.lisp
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp: /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/status.lisp
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp: /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/nodeReady.lisp
 
 
 /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/ranger.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
@@ -69,9 +71,23 @@ crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp: /home/bitcraze/crazy_ws
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from crazy_msgs/stateEstimate.msg"
 	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg
 
+/home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/status.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/status.lisp: /home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg
+/home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/status.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from crazy_msgs/status.msg"
+	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg
+
+/home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/nodeReady.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/nodeReady.lisp: /home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg
+/home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/nodeReady.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from crazy_msgs/nodeReady.msg"
+	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg
+
 crazy_msgs_generate_messages_lisp: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp
 crazy_msgs_generate_messages_lisp: /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/ranger.lisp
 crazy_msgs_generate_messages_lisp: /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/stateEstimate.lisp
+crazy_msgs_generate_messages_lisp: /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/status.lisp
+crazy_msgs_generate_messages_lisp: /home/bitcraze/crazy_ws/devel/share/common-lisp/ros/crazy_msgs/msg/nodeReady.lisp
 crazy_msgs_generate_messages_lisp: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/build.make
 
 .PHONY : crazy_msgs_generate_messages_lisp

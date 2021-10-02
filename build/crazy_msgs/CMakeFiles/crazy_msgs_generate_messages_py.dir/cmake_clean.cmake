@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/__init__.py"
+  "/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_nodeReady.py"
   "/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_ranger.py"
   "/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_stateEstimate.py"
+  "/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_status.py"
   "CMakeFiles/crazy_msgs_generate_messages_py"
 )
 

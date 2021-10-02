@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "crazy_msgs: 2 messages, 0 services")
+message(STATUS "crazy_msgs: 4 messages, 0 services")
 
 set(MSG_I_FLAGS "-Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -27,6 +27,16 @@ add_custom_target(_crazy_msgs_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazy_msgs" "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg" "std_msgs/Header"
 )
 
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg" NAME_WE)
+add_custom_target(_crazy_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazy_msgs" "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg" "std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg" NAME_WE)
+add_custom_target(_crazy_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "crazy_msgs" "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg" "std_msgs/Header"
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -41,6 +51,18 @@ _generate_msg_cpp(crazy_msgs
 )
 _generate_msg_cpp(crazy_msgs
   "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazy_msgs
+)
+_generate_msg_cpp(crazy_msgs
+  "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazy_msgs
+)
+_generate_msg_cpp(crazy_msgs
+  "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/crazy_msgs
@@ -64,6 +86,10 @@ get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/ran
 add_dependencies(crazy_msgs_generate_messages_cpp _crazy_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg" NAME_WE)
 add_dependencies(crazy_msgs_generate_messages_cpp _crazy_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg" NAME_WE)
+add_dependencies(crazy_msgs_generate_messages_cpp _crazy_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg" NAME_WE)
+add_dependencies(crazy_msgs_generate_messages_cpp _crazy_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(crazy_msgs_gencpp)
@@ -82,6 +108,18 @@ _generate_msg_eus(crazy_msgs
 )
 _generate_msg_eus(crazy_msgs
   "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/crazy_msgs
+)
+_generate_msg_eus(crazy_msgs
+  "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/crazy_msgs
+)
+_generate_msg_eus(crazy_msgs
+  "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/crazy_msgs
@@ -105,6 +143,10 @@ get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/ran
 add_dependencies(crazy_msgs_generate_messages_eus _crazy_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg" NAME_WE)
 add_dependencies(crazy_msgs_generate_messages_eus _crazy_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg" NAME_WE)
+add_dependencies(crazy_msgs_generate_messages_eus _crazy_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg" NAME_WE)
+add_dependencies(crazy_msgs_generate_messages_eus _crazy_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(crazy_msgs_geneus)
@@ -123,6 +165,18 @@ _generate_msg_lisp(crazy_msgs
 )
 _generate_msg_lisp(crazy_msgs
   "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazy_msgs
+)
+_generate_msg_lisp(crazy_msgs
+  "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazy_msgs
+)
+_generate_msg_lisp(crazy_msgs
+  "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/crazy_msgs
@@ -146,6 +200,10 @@ get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/ran
 add_dependencies(crazy_msgs_generate_messages_lisp _crazy_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg" NAME_WE)
 add_dependencies(crazy_msgs_generate_messages_lisp _crazy_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg" NAME_WE)
+add_dependencies(crazy_msgs_generate_messages_lisp _crazy_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg" NAME_WE)
+add_dependencies(crazy_msgs_generate_messages_lisp _crazy_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(crazy_msgs_genlisp)
@@ -164,6 +222,18 @@ _generate_msg_nodejs(crazy_msgs
 )
 _generate_msg_nodejs(crazy_msgs
   "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/crazy_msgs
+)
+_generate_msg_nodejs(crazy_msgs
+  "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/crazy_msgs
+)
+_generate_msg_nodejs(crazy_msgs
+  "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/crazy_msgs
@@ -187,6 +257,10 @@ get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/ran
 add_dependencies(crazy_msgs_generate_messages_nodejs _crazy_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg" NAME_WE)
 add_dependencies(crazy_msgs_generate_messages_nodejs _crazy_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg" NAME_WE)
+add_dependencies(crazy_msgs_generate_messages_nodejs _crazy_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg" NAME_WE)
+add_dependencies(crazy_msgs_generate_messages_nodejs _crazy_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(crazy_msgs_gennodejs)
@@ -209,6 +283,18 @@ _generate_msg_py(crazy_msgs
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazy_msgs
 )
+_generate_msg_py(crazy_msgs
+  "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazy_msgs
+)
+_generate_msg_py(crazy_msgs
+  "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/crazy_msgs
+)
 
 ### Generating Services
 
@@ -227,6 +313,10 @@ add_dependencies(crazy_msgs_generate_messages crazy_msgs_generate_messages_py)
 get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/ranger.msg" NAME_WE)
 add_dependencies(crazy_msgs_generate_messages_py _crazy_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg" NAME_WE)
+add_dependencies(crazy_msgs_generate_messages_py _crazy_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg" NAME_WE)
+add_dependencies(crazy_msgs_generate_messages_py _crazy_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg" NAME_WE)
 add_dependencies(crazy_msgs_generate_messages_py _crazy_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

@@ -161,6 +161,7 @@ crazy_msgs/preinstall:
 crazy_msgs/clean: crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+crazy_msgs/clean: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
@@ -172,20 +173,21 @@ crazy_msgs/clean: crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.d
 crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/clean
+crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/clean
+crazy_msgs/clean: crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_ranger.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/clean
+crazy_msgs/clean: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/roscpp_generate_messages_py.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_gennodejs.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_geneus.dir/clean
 crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/clean
-crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/clean
-crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/clean
-crazy_msgs/clean: crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-crazy_msgs/clean: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/clean
 
 .PHONY : crazy_msgs/clean
 
@@ -389,7 +391,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=16,17 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=26,27 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -416,7 +418,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=14,15 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=24,25 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -443,7 +445,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=20,21 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=30,31 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -470,7 +472,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=18,19 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=28,29 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -570,6 +572,33 @@ rosgraph_msgs_generate_messages_lisp: crazy_msgs/CMakeFiles/rosgraph_msgs_genera
 crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
 	$(MAKE) -f crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 .PHONY : crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir
+
+# All Build rule for target.
+crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/all:
+	$(MAKE) -f crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/build.make crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/depend
+	$(MAKE) -f crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/build.make crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target _crazy_msgs_generate_messages_check_deps_nodeReady"
+.PHONY : crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/all
+
+# Build rule for subdir invocation for target.
+crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
+.PHONY : crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/rule
+
+# Convenience name for target.
+_crazy_msgs_generate_messages_check_deps_nodeReady: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/rule
+
+.PHONY : _crazy_msgs_generate_messages_check_deps_nodeReady
+
+# clean rule for target.
+crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/clean:
+	$(MAKE) -f crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/build.make crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/clean
+.PHONY : crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/clean
 
 #=============================================================================
 # Target rules for target crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
@@ -691,7 +720,7 @@ crazy_msgs/CMakeFiles/crazy_msgs_gencpp.dir/all: crazy_msgs/CMakeFiles/crazy_msg
 
 # Build rule for subdir invocation for target.
 crazy_msgs/CMakeFiles/crazy_msgs_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_gencpp.dir/rule
@@ -745,7 +774,7 @@ crazy_msgs/CMakeFiles/crazy_msgs_genlisp.dir/all: crazy_msgs/CMakeFiles/crazy_ms
 
 # Build rule for subdir invocation for target.
 crazy_msgs/CMakeFiles/crazy_msgs_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_genlisp.dir/rule
@@ -791,17 +820,19 @@ crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
 # Target rules for target crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_ranger.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/all
 	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=7,8 "Built target crazy_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=11,12,13,14 "Built target crazy_msgs_generate_messages_lisp"
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/rule
@@ -869,6 +900,122 @@ roscpp_generate_messages_cpp: crazy_msgs/CMakeFiles/roscpp_generate_messages_cpp
 crazy_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
 	$(MAKE) -f crazy_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 .PHONY : crazy_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir
+
+# All Build rule for target.
+crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all
+	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/depend
+	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target crazy_msgs_genpy"
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule
+
+# Convenience name for target.
+crazy_msgs_genpy: crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule
+
+.PHONY : crazy_msgs_genpy
+
+# clean rule for target.
+crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/clean:
+	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/clean
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/clean
+
+#=============================================================================
+# Target rules for target crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_ranger.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/all
+	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=2,3,4,5 "Built target crazy_msgs_generate_messages_cpp"
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+crazy_msgs_generate_messages_cpp: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : crazy_msgs_generate_messages_cpp
+
+# clean rule for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/clean
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
+.PHONY : crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
+.PHONY : crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# clean rule for target.
+crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_ranger.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/all
+	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=15,16,17,18 "Built target crazy_msgs_generate_messages_nodejs"
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+crazy_msgs_generate_messages_nodejs: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : crazy_msgs_generate_messages_nodejs
+
+# clean rule for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/clean
+.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
 # Target rules for target crazy_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir
@@ -956,10 +1103,10 @@ crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_ranger.dir/clean:
 
 # All Build rule for target.
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/all
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/all
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all
 	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/depend
 	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target crazy_msgs_generate_messages"
@@ -967,7 +1114,7 @@ crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/all: crazy_msgs/CMakeFile
 
 # Build rule for subdir invocation for target.
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 22
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages.dir/rule
@@ -1010,20 +1157,49 @@ crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir
 .PHONY : crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/clean
 
 #=============================================================================
+# Target rules for target crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir
+
+# All Build rule for target.
+crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/all:
+	$(MAKE) -f crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/build.make crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/depend
+	$(MAKE) -f crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/build.make crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target _crazy_msgs_generate_messages_check_deps_status"
+.PHONY : crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/all
+
+# Build rule for subdir invocation for target.
+crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
+.PHONY : crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/rule
+
+# Convenience name for target.
+_crazy_msgs_generate_messages_check_deps_status: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/rule
+
+.PHONY : _crazy_msgs_generate_messages_check_deps_status
+
+# clean rule for target.
+crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/clean:
+	$(MAKE) -f crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/build.make crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/clean
+.PHONY : crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/clean
+
+#=============================================================================
 # Target rules for target crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_ranger.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/all
 	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=4,5,6 "Built target crazy_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target crazy_msgs_generate_messages_eus"
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/rule
@@ -1077,7 +1253,7 @@ crazy_msgs/CMakeFiles/crazy_msgs_gennodejs.dir/all: crazy_msgs/CMakeFiles/crazy_
 
 # Build rule for subdir invocation for target.
 crazy_msgs/CMakeFiles/crazy_msgs_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_gennodejs.dir/rule
@@ -1104,7 +1280,7 @@ crazy_msgs/CMakeFiles/crazy_msgs_geneus.dir/all: crazy_msgs/CMakeFiles/crazy_msg
 
 # Build rule for subdir invocation for target.
 crazy_msgs/CMakeFiles/crazy_msgs_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_geneus.dir/rule
@@ -1123,17 +1299,19 @@ crazy_msgs/CMakeFiles/crazy_msgs_geneus.dir/clean:
 # Target rules for target crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir
 
 # All Build rule for target.
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_nodeReady.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_ranger.dir/all
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/all
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_status.dir/all
 	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=11,12,13 "Built target crazy_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=19,20,21,22,23 "Built target crazy_msgs_generate_messages_py"
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/rule
@@ -1149,130 +1327,18 @@ crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/clean:
 .PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_ranger.dir/all
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/all
-	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=2,3 "Built target crazy_msgs_generate_messages_cpp"
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-crazy_msgs_generate_messages_cpp: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : crazy_msgs_generate_messages_cpp
-
-# clean rule for target.
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/clean
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/clean
-
-#=============================================================================
-# Target rules for target crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir
-
-# All Build rule for target.
-crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all
-	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/depend
-	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target crazy_msgs_genpy"
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/all
-
-# Build rule for subdir invocation for target.
-crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule
-
-# Convenience name for target.
-crazy_msgs_genpy: crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/rule
-
-.PHONY : crazy_msgs_genpy
-
-# clean rule for target.
-crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/clean:
-	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/clean
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_genpy.dir/clean
-
-#=============================================================================
-# Target rules for target crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
-.PHONY : crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# clean rule for target.
-crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : crazy_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-
-#=============================================================================
-# Target rules for target crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_ranger.dir/all
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/_crazy_msgs_generate_messages_check_deps_stateEstimate.dir/all
-	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=9,10 "Built target crazy_msgs_generate_messages_nodejs"
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-crazy_msgs_generate_messages_nodejs: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : crazy_msgs_generate_messages_nodejs
-
-# clean rule for target.
-crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/build.make crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/clean
-.PHONY : crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/clean
-
-#=============================================================================
 # Target rules for target crazy_backend/CMakeFiles/sensor_interface.dir
 
 # All Build rule for target.
 crazy_backend/CMakeFiles/sensor_interface.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f crazy_backend/CMakeFiles/sensor_interface.dir/build.make crazy_backend/CMakeFiles/sensor_interface.dir/depend
 	$(MAKE) -f crazy_backend/CMakeFiles/sensor_interface.dir/build.make crazy_backend/CMakeFiles/sensor_interface.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=22,23 "Built target sensor_interface"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=32,33 "Built target sensor_interface"
 .PHONY : crazy_backend/CMakeFiles/sensor_interface.dir/all
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/sensor_interface.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/sensor_interface.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/sensor_interface.dir/rule
@@ -1299,7 +1365,7 @@ crazy_backend/CMakeFiles/crazy_backend_genpy.dir/all: crazy_backend/CMakeFiles/c
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_genpy.dir/rule
@@ -1327,7 +1393,7 @@ crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/all: crazy_msgs/
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/rule
@@ -1346,8 +1412,8 @@ crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/clean:
 # Target rules for target crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir
 
 # All Build rule for target.
-crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all
+crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/depend
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target crazy_backend_generate_messages_nodejs"
@@ -1355,7 +1421,7 @@ crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/all: crazy_m
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/rule
@@ -1382,7 +1448,7 @@ crazy_backend/CMakeFiles/crazy_backend_genlisp.dir/all: crazy_backend/CMakeFiles
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_genlisp.dir/rule
@@ -1410,7 +1476,7 @@ crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/all: crazy_msg
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/rule
@@ -1437,7 +1503,7 @@ crazy_backend/CMakeFiles/crazy_backend_geneus.dir/all: crazy_backend/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_geneus.dir/rule
@@ -1465,7 +1531,7 @@ crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/all: crazy_msgs
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/rule
@@ -1492,7 +1558,7 @@ crazy_backend/CMakeFiles/crazy_backend_gencpp.dir/all: crazy_backend/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_gencpp.dir/rule
@@ -1523,7 +1589,7 @@ crazy_backend/CMakeFiles/crazy_backend_generate_messages.dir/all: crazy_backend/
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_generate_messages.dir/rule
@@ -2010,7 +2076,7 @@ crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/all: crazy_msgs
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/rule
@@ -2469,7 +2535,7 @@ crazy_backend/CMakeFiles/crazy_backend_gennodejs.dir/all: crazy_backend/CMakeFil
 
 # Build rule for subdir invocation for target.
 crazy_backend/CMakeFiles/crazy_backend_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/crazy_backend_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bitcraze/crazy_ws/build/CMakeFiles 0
 .PHONY : crazy_backend/CMakeFiles/crazy_backend_gennodejs.dir/rule

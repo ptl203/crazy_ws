@@ -55,6 +55,8 @@ include crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/progress.make
 
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_ranger.py
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_stateEstimate.py
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_status.py
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_nodeReady.py
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/__init__.py
 
 
@@ -70,15 +72,31 @@ crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/d
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG crazy_msgs/stateEstimate"
 	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg
 
+/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_status.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_status.py: /home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg
+/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_status.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG crazy_msgs/status"
+	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg
+
+/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_nodeReady.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_nodeReady.py: /home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg
+/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_nodeReady.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG crazy_msgs/nodeReady"
+	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg
+
 /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/__init__.py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_ranger.py
 /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/__init__.py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_stateEstimate.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for crazy_msgs"
+/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/__init__.py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_status.py
+/home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/__init__.py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_nodeReady.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python msg __init__.py for crazy_msgs"
 	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg --initpy
 
 crazy_msgs_generate_messages_py: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py
 crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_ranger.py
 crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_stateEstimate.py
+crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_status.py
+crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/_nodeReady.py
 crazy_msgs_generate_messages_py: /home/bitcraze/crazy_ws/devel/lib/python3/dist-packages/crazy_msgs/msg/__init__.py
 crazy_msgs_generate_messages_py: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/build.make
 

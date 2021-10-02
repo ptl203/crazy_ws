@@ -55,6 +55,8 @@ include crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/progress.make
 
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp: /home/bitcraze/crazy_ws/devel/include/crazy_msgs/ranger.h
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp: /home/bitcraze/crazy_ws/devel/include/crazy_msgs/stateEstimate.h
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp: /home/bitcraze/crazy_ws/devel/include/crazy_msgs/status.h
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp: /home/bitcraze/crazy_ws/devel/include/crazy_msgs/nodeReady.h
 
 
 /home/bitcraze/crazy_ws/devel/include/crazy_msgs/ranger.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
@@ -71,9 +73,25 @@ crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp: /home/bitcraze/crazy_ws/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from crazy_msgs/stateEstimate.msg"
 	cd /home/bitcraze/crazy_ws/src/crazy_msgs && /home/bitcraze/crazy_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/include/crazy_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
+/home/bitcraze/crazy_ws/devel/include/crazy_msgs/status.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/bitcraze/crazy_ws/devel/include/crazy_msgs/status.h: /home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg
+/home/bitcraze/crazy_ws/devel/include/crazy_msgs/status.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/bitcraze/crazy_ws/devel/include/crazy_msgs/status.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from crazy_msgs/status.msg"
+	cd /home/bitcraze/crazy_ws/src/crazy_msgs && /home/bitcraze/crazy_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/include/crazy_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+
+/home/bitcraze/crazy_ws/devel/include/crazy_msgs/nodeReady.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/bitcraze/crazy_ws/devel/include/crazy_msgs/nodeReady.h: /home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg
+/home/bitcraze/crazy_ws/devel/include/crazy_msgs/nodeReady.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/bitcraze/crazy_ws/devel/include/crazy_msgs/nodeReady.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from crazy_msgs/nodeReady.msg"
+	cd /home/bitcraze/crazy_ws/src/crazy_msgs && /home/bitcraze/crazy_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/include/crazy_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+
 crazy_msgs_generate_messages_cpp: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp
 crazy_msgs_generate_messages_cpp: /home/bitcraze/crazy_ws/devel/include/crazy_msgs/ranger.h
 crazy_msgs_generate_messages_cpp: /home/bitcraze/crazy_ws/devel/include/crazy_msgs/stateEstimate.h
+crazy_msgs_generate_messages_cpp: /home/bitcraze/crazy_ws/devel/include/crazy_msgs/status.h
+crazy_msgs_generate_messages_cpp: /home/bitcraze/crazy_ws/devel/include/crazy_msgs/nodeReady.h
 crazy_msgs_generate_messages_cpp: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/build.make
 
 .PHONY : crazy_msgs_generate_messages_cpp

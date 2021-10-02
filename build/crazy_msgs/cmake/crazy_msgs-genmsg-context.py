@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/ranger.msg;/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg"
+messages_str = "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/ranger.msg;/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg;/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg;/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg"
 services_str = ""
 pkg_name = "crazy_msgs"
 dependencies_str = "std_msgs"

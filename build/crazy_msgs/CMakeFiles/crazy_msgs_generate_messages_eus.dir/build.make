@@ -55,6 +55,8 @@ include crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/progress.make
 
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/ranger.l
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/stateEstimate.l
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/status.l
+crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/nodeReady.l
 crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/manifest.l
 
 
@@ -70,13 +72,27 @@ crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from crazy_msgs/stateEstimate.msg"
 	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg
 
+/home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/status.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/status.l: /home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg
+/home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/status.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from crazy_msgs/status.msg"
+	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg
+
+/home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/nodeReady.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/nodeReady.l: /home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg
+/home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/nodeReady.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from crazy_msgs/nodeReady.msg"
+	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg -Icrazy_msgs:/home/bitcraze/crazy_ws/src/crazy_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p crazy_msgs -o /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg
+
 /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for crazy_msgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp manifest code for crazy_msgs"
 	cd /home/bitcraze/crazy_ws/build/crazy_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs crazy_msgs std_msgs
 
 crazy_msgs_generate_messages_eus: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus
 crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/ranger.l
 crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/stateEstimate.l
+crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/status.l
+crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/msg/nodeReady.l
 crazy_msgs_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_msgs/manifest.l
 crazy_msgs_generate_messages_eus: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/build.make
 

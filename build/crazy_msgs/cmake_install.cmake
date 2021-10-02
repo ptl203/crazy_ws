@@ -41,6 +41,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/crazy_msgs/msg" TYPE FILE FILES
     "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/ranger.msg"
     "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/stateEstimate.msg"
+    "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/status.msg"
+    "/home/bitcraze/crazy_ws/src/crazy_msgs/msg/nodeReady.msg"
     )
 endif()
 
