@@ -378,6 +378,21 @@ tf_generate_messages_nodejs/fast:
 .PHONY : tf_generate_messages_nodejs/fast
 
 # Convenience name for target.
+crazy_backend/CMakeFiles/arbiter_node.dir/rule:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/arbiter_node.dir/rule
+.PHONY : crazy_backend/CMakeFiles/arbiter_node.dir/rule
+
+# Convenience name for target.
+arbiter_node: crazy_backend/CMakeFiles/arbiter_node.dir/rule
+
+.PHONY : arbiter_node
+
+# fast build rule for target.
+arbiter_node/fast:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_backend/CMakeFiles/arbiter_node.dir/build.make crazy_backend/CMakeFiles/arbiter_node.dir/build
+.PHONY : arbiter_node/fast
+
+# Convenience name for target.
 crazy_backend/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
 	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 .PHONY : crazy_backend/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
@@ -887,6 +902,33 @@ actionlib_msgs_generate_messages_lisp/fast:
 	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_backend/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make crazy_backend/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
+src/arbiter_node.o: src/arbiter_node.cpp.o
+
+.PHONY : src/arbiter_node.o
+
+# target to build an object file
+src/arbiter_node.cpp.o:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_backend/CMakeFiles/arbiter_node.dir/build.make crazy_backend/CMakeFiles/arbiter_node.dir/src/arbiter_node.cpp.o
+.PHONY : src/arbiter_node.cpp.o
+
+src/arbiter_node.i: src/arbiter_node.cpp.i
+
+.PHONY : src/arbiter_node.i
+
+# target to preprocess a source file
+src/arbiter_node.cpp.i:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_backend/CMakeFiles/arbiter_node.dir/build.make crazy_backend/CMakeFiles/arbiter_node.dir/src/arbiter_node.cpp.i
+.PHONY : src/arbiter_node.cpp.i
+
+src/arbiter_node.s: src/arbiter_node.cpp.s
+
+.PHONY : src/arbiter_node.s
+
+# target to generate assembly for a file
+src/arbiter_node.cpp.s:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_backend/CMakeFiles/arbiter_node.dir/build.make crazy_backend/CMakeFiles/arbiter_node.dir/src/arbiter_node.cpp.s
+.PHONY : src/arbiter_node.cpp.s
+
 src/sensor_interface.o: src/sensor_interface.cpp.o
 
 .PHONY : src/sensor_interface.o
@@ -940,6 +982,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... tf_generate_messages_nodejs"
+	@echo "... arbiter_node"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... tf_generate_messages_lisp"
@@ -975,6 +1018,9 @@ help:
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... src/arbiter_node.o"
+	@echo "... src/arbiter_node.i"
+	@echo "... src/arbiter_node.s"
 	@echo "... src/sensor_interface.o"
 	@echo "... src/sensor_interface.i"
 	@echo "... src/sensor_interface.s"

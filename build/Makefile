@@ -857,6 +857,19 @@ tf_generate_messages_nodejs/fast:
 .PHONY : tf_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named arbiter_node
+
+# Build rule for target.
+arbiter_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arbiter_node
+.PHONY : arbiter_node
+
+# fast build rule for target.
+arbiter_node/fast:
+	$(MAKE) -f crazy_backend/CMakeFiles/arbiter_node.dir/build.make crazy_backend/CMakeFiles/arbiter_node.dir/build
+.PHONY : arbiter_node/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -1364,6 +1377,7 @@ help:
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... tf_generate_messages_nodejs"
+	@echo "... arbiter_node"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_py"
