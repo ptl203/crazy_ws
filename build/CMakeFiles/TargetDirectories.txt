@@ -92,6 +92,7 @@
 /home/bitcraze/crazy_ws/build/crazy_backend/CMakeFiles/rebuild_cache.dir
 /home/bitcraze/crazy_ws/build/crazy_backend/CMakeFiles/tf2_msgs_generate_messages_eus.dir
 /home/bitcraze/crazy_ws/build/crazy_backend/CMakeFiles/tf_generate_messages_nodejs.dir
+/home/bitcraze/crazy_ws/build/crazy_backend/CMakeFiles/launch_node.dir
 /home/bitcraze/crazy_ws/build/crazy_backend/CMakeFiles/arbiter_node.dir
 /home/bitcraze/crazy_ws/build/crazy_backend/CMakeFiles/geometry_msgs_generate_messages_eus.dir
 /home/bitcraze/crazy_ws/build/crazy_backend/CMakeFiles/edit_cache.dir

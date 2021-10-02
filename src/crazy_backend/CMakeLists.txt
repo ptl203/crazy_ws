@@ -136,6 +136,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(sensor_interface src/sensor_interface.cpp)
 add_executable(arbiter_node src/arbiter_node.cpp)
+add_executable(launch_node src/launch_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -147,10 +148,12 @@ add_executable(arbiter_node src/arbiter_node.cpp)
 ## same as for the library above
 add_dependencies(sensor_interface crazy_msgs_generate_messages_cpp)
 add_dependencies(arbiter_node crazy_msgs_generate_messages_cpp)
+add_dependencies(launch_node crazy_msgs_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(sensor_interface ${catkin_LIBRARIES})
 target_link_libraries(arbiter_node ${catkin_LIBRARIES})
+target_link_libraries(launch_node ${catkin_LIBRARIES})
 
 #############
 ## Install ##

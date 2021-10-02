@@ -378,6 +378,21 @@ tf_generate_messages_nodejs/fast:
 .PHONY : tf_generate_messages_nodejs/fast
 
 # Convenience name for target.
+crazy_backend/CMakeFiles/launch_node.dir/rule:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/launch_node.dir/rule
+.PHONY : crazy_backend/CMakeFiles/launch_node.dir/rule
+
+# Convenience name for target.
+launch_node: crazy_backend/CMakeFiles/launch_node.dir/rule
+
+.PHONY : launch_node
+
+# fast build rule for target.
+launch_node/fast:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_backend/CMakeFiles/launch_node.dir/build.make crazy_backend/CMakeFiles/launch_node.dir/build
+.PHONY : launch_node/fast
+
+# Convenience name for target.
 crazy_backend/CMakeFiles/arbiter_node.dir/rule:
 	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f CMakeFiles/Makefile2 crazy_backend/CMakeFiles/arbiter_node.dir/rule
 .PHONY : crazy_backend/CMakeFiles/arbiter_node.dir/rule
@@ -929,6 +944,33 @@ src/arbiter_node.cpp.s:
 	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_backend/CMakeFiles/arbiter_node.dir/build.make crazy_backend/CMakeFiles/arbiter_node.dir/src/arbiter_node.cpp.s
 .PHONY : src/arbiter_node.cpp.s
 
+src/launch_node.o: src/launch_node.cpp.o
+
+.PHONY : src/launch_node.o
+
+# target to build an object file
+src/launch_node.cpp.o:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_backend/CMakeFiles/launch_node.dir/build.make crazy_backend/CMakeFiles/launch_node.dir/src/launch_node.cpp.o
+.PHONY : src/launch_node.cpp.o
+
+src/launch_node.i: src/launch_node.cpp.i
+
+.PHONY : src/launch_node.i
+
+# target to preprocess a source file
+src/launch_node.cpp.i:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_backend/CMakeFiles/launch_node.dir/build.make crazy_backend/CMakeFiles/launch_node.dir/src/launch_node.cpp.i
+.PHONY : src/launch_node.cpp.i
+
+src/launch_node.s: src/launch_node.cpp.s
+
+.PHONY : src/launch_node.s
+
+# target to generate assembly for a file
+src/launch_node.cpp.s:
+	cd /home/bitcraze/crazy_ws/build && $(MAKE) -f crazy_backend/CMakeFiles/launch_node.dir/build.make crazy_backend/CMakeFiles/launch_node.dir/src/launch_node.cpp.s
+.PHONY : src/launch_node.cpp.s
+
 src/sensor_interface.o: src/sensor_interface.cpp.o
 
 .PHONY : src/sensor_interface.o
@@ -982,6 +1024,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... tf_generate_messages_nodejs"
+	@echo "... launch_node"
 	@echo "... arbiter_node"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... edit_cache"
@@ -1021,6 +1064,9 @@ help:
 	@echo "... src/arbiter_node.o"
 	@echo "... src/arbiter_node.i"
 	@echo "... src/arbiter_node.s"
+	@echo "... src/launch_node.o"
+	@echo "... src/launch_node.i"
+	@echo "... src/launch_node.s"
 	@echo "... src/sensor_interface.o"
 	@echo "... src/sensor_interface.i"
 	@echo "... src/sensor_interface.s"

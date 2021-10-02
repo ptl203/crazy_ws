@@ -18,7 +18,7 @@ class arbiterNode {
 
             ROS_INFO("Creating Publisher");
             //Creating Publisher
-            status_pub = n.advertise<crazy_msgs::status>("system_status", 1000);
+            status_pub = n.advertise<crazy_msgs::status>("/system_status", 1000);
             ROS_INFO("Created Publisher");
 
             while (1) {
