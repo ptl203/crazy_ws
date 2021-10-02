@@ -8,7 +8,7 @@ class launchNode {
     public:
         launchNode () 
         {
-            bool launch_ready = 0; 
+            bool launch_ready, ranger_ready = 0; 
             ROS_INFO("Create Subscribers");
             //Create Subscribers to system status and ranger data
             system_sub = n.subscribe("/system_status", 1000, &launchNode::statusCallback, this);
@@ -17,7 +17,7 @@ class launchNode {
             ROS_INFO("Creating Publisher");
             //Creating Publisher to system_status
             system_pub = n.advertise<crazy_msgs::status>("/system_status", 1000);
-            launch_pub = n.advertise<crazy_msgs::status>("/launch_ready", 1000);
+            launch_pub = n.advertise<crazy_msgs::nodeReady>("/launch_ready", 1000);
 
             while (1) {
                 //Print Launch Ready
@@ -25,18 +25,19 @@ class launchNode {
                 launchReady.status = 1;
                 launch_pub.publish(launchReady);
                 if (launch_ready) {
-                    //do_stuff
-                } //else {
-                    //pass; Dont do anything if you aren't ready
-                //}
+                    if(ranger_ready) {
+                        //do stuff
+                    }
+                }
                 ros::spinOnce();
             }
         }
 
         void statusCallback(const crazy_msgs::status& msg) 
         {
-            //Update launch_status variable
-            //arbiterNode::launch_status = msg.status;
+            if (msg.status = "READY") {
+                launch_ready = 1; 
+            }
         }
         void rangerCallback(const crazy_msgs::nodeReady& msg) 
         {
@@ -50,6 +51,7 @@ class launchNode {
         ros::Publisher system_pub;
         ros::Publisher launch_pub;
         bool launch_ready;
+        bool ranger_ready;
 };
 int main (int argc, char **argv) {
     ROS_INFO("Initializing node");
