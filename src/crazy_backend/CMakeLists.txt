@@ -104,7 +104,7 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
- INCLUDE_DIRS include
+ INCLUDE_DIRS
  LIBRARIES crazy_backend
  CATKIN_DEPENDS crazy_msgs crazyswarm roscpp rospy std_msgs
  DEPENDS system_lib
@@ -144,12 +144,10 @@ add_executable(sensor_interface src/sensor_interface.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-# add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(sensor_interface crazy_msgs_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(sensor_interface
-  ${catkin_LIBRARIES}
-)
+target_link_libraries(sensor_interface ${catkin_LIBRARIES})
 
 #############
 ## Install ##

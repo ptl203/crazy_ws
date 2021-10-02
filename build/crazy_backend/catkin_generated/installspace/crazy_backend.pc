@@ -1,0 +1,8 @@
+prefix=/home/bitcraze/crazy_ws/install
+
+Name: crazy_backend
+Description: Description of crazy_backend
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lcrazy_backend
+Requires: crazy_msgs crazyswarm roscpp rospy std_msgs

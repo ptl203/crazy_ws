@@ -28,12 +28,21 @@ class sensorInterface {
 
             ROS_INFO("Publishing State Estimate");
             crazy_msgs::stateEstimate stateMsg;
-            stateMsg.values = {msg.values[0], msg.values[1], msg.values[2]};
+            stateMsg.x = msg.values[0];
+            stateMsg.y = msg.values[1];
+            stateMsg.z = msg.values[2];
+
             state_pub.publish(stateMsg);
 
             ROS_INFO("Publishing Ranger Data");
             crazy_msgs::ranger rangerMsg;
-            rangerMsg.values = {msg.values[3], msg.values[4], msg.values[5], msg.values[6], msg.values[7], msg.values[8]};
+            rangerMsg.front = msg.values[3];
+            rangerMsg.back = msg.values[4];
+            rangerMsg.up = msg.values[5];
+            rangerMsg.down = msg.values[6];
+            rangerMsg.left = msg.values[7];
+            rangerMsg.right = msg.values[8];
+
             ranger_pub.publish(rangerMsg);
         }
     private:
