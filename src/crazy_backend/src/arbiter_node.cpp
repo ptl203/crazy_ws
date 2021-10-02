@@ -21,18 +21,18 @@ class arbiterNode {
             status_pub = n.advertise<crazy_msgs::status>("system_status", 1000);
             ROS_INFO("Created Publisher");
 
-            //while (1) {
-                //crazy_msgs::status statusMsg;
-                //if (launch_status && task_status && land_status) {
-                    //statusMsg.status = "READY";
-                    //status_pub.publish(statusMsg);
-                    //break;
-                //} else {
-                    //statusMsg.status = "INITIALIZING";
-                    //status_pub.publish(statusMsg);
-                //}
-                //ros::spinOnce();
-            //}
+            while (1) {
+                crazy_msgs::status statusMsg;
+                if (launch_status && task_status && land_status) {
+                    statusMsg.status = "READY";
+                    status_pub.publish(statusMsg);
+                    break;
+                } else {
+                    statusMsg.status = "INITIALIZING";
+                    status_pub.publish(statusMsg);
+                }
+                ros::spinOnce();
+            }
         }
 
         void launchCallback(const crazy_msgs::nodeReady& msg) 
@@ -64,6 +64,6 @@ int main (int argc, char **argv) {
     ROS_INFO("Initializing node");
     ros::init(argc, argv, "arbiter_node");
     ROS_INFO("Creating arbiterNode object");
-    //arbiterNode arbiterNode;
+    arbiterNode arbiterNode;
     return 0; 
 }
