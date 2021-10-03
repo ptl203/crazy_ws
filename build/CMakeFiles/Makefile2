@@ -1390,6 +1390,7 @@ crazy_backend/CMakeFiles/crazy_backend_genpy.dir/clean:
 # All Build rule for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_py.dir/all
+crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/all: crazy_backend/CMakeFiles/crazyswarm_generate_messages_py.dir/all
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/depend
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target crazy_backend_generate_messages_py"
@@ -1418,6 +1419,7 @@ crazy_backend/CMakeFiles/crazy_backend_generate_messages_py.dir/clean:
 # All Build rule for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_nodejs.dir/all
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/all: crazy_backend/CMakeFiles/crazyswarm_generate_messages_nodejs.dir/all
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/depend
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target crazy_backend_generate_messages_nodejs"
@@ -1473,6 +1475,7 @@ crazy_backend/CMakeFiles/crazy_backend_genlisp.dir/clean:
 # All Build rule for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_lisp.dir/all
+crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/all: crazy_backend/CMakeFiles/crazyswarm_generate_messages_lisp.dir/all
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/depend
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target crazy_backend_generate_messages_lisp"
@@ -1528,6 +1531,7 @@ crazy_backend/CMakeFiles/crazy_backend_geneus.dir/clean:
 # All Build rule for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_eus.dir/all
+crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/all: crazy_backend/CMakeFiles/crazyswarm_generate_messages_eus.dir/all
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/depend
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=3 "Built target crazy_backend_generate_messages_eus"
@@ -1721,6 +1725,7 @@ crazy_backend/CMakeFiles/tf_generate_messages_nodejs.dir/clean:
 
 # All Build rule for target.
 crazy_backend/CMakeFiles/launch_node.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all
+crazy_backend/CMakeFiles/launch_node.dir/all: crazy_backend/CMakeFiles/crazyswarm_generate_messages_cpp.dir/all
 	$(MAKE) -f crazy_backend/CMakeFiles/launch_node.dir/build.make crazy_backend/CMakeFiles/launch_node.dir/depend
 	$(MAKE) -f crazy_backend/CMakeFiles/launch_node.dir/build.make crazy_backend/CMakeFiles/launch_node.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=34,35 "Built target launch_node"
@@ -2127,6 +2132,7 @@ crazy_backend/CMakeFiles/crazyswarm_generate_messages_nodejs.dir/clean:
 # All Build rule for target.
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/all: crazy_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/all: crazy_msgs/CMakeFiles/crazy_msgs_generate_messages_cpp.dir/all
+crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/all: crazy_backend/CMakeFiles/crazyswarm_generate_messages_cpp.dir/all
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/depend
 	$(MAKE) -f crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/build.make crazy_backend/CMakeFiles/crazy_backend_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num= "Built target crazy_backend_generate_messages_cpp"

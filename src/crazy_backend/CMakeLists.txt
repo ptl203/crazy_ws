@@ -71,7 +71,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
    DEPENDENCIES
-   crazy_msgs std_msgs
+   crazy_msgs std_msgs crazyswarm
 )
 
 ################################################
@@ -148,7 +148,7 @@ add_executable(launch_node src/launch_node.cpp)
 ## same as for the library above
 add_dependencies(sensor_interface crazy_msgs_generate_messages_cpp)
 add_dependencies(arbiter_node crazy_msgs_generate_messages_cpp)
-add_dependencies(launch_node crazy_msgs_generate_messages_cpp)
+add_dependencies(launch_node crazy_msgs_generate_messages_cpp crazyswarm_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(sensor_interface ${catkin_LIBRARIES})
