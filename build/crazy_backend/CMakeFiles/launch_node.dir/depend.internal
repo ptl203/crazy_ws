@@ -6,6 +6,12 @@ crazy_backend/CMakeFiles/launch_node.dir/src/launch_node.cpp.o
  /home/bitcraze/crazyswarm/ros_ws/devel/include/crazy_msgs/nodeReady.h
  /home/bitcraze/crazyswarm/ros_ws/devel/include/crazy_msgs/ranger.h
  /home/bitcraze/crazyswarm/ros_ws/devel/include/crazy_msgs/status.h
+ /home/bitcraze/crazyswarm/ros_ws/devel/include/crazyswarm/Land.h
+ /home/bitcraze/crazyswarm/ros_ws/devel/include/crazyswarm/LandRequest.h
+ /home/bitcraze/crazyswarm/ros_ws/devel/include/crazyswarm/LandResponse.h
+ /home/bitcraze/crazyswarm/ros_ws/devel/include/crazyswarm/Takeoff.h
+ /home/bitcraze/crazyswarm/ros_ws/devel/include/crazyswarm/TakeoffRequest.h
+ /home/bitcraze/crazyswarm/ros_ws/devel/include/crazyswarm/TakeoffResponse.h
  /opt/ros/noetic/include/ros/advertise_options.h
  /opt/ros/noetic/include/ros/advertise_service_options.h
  /opt/ros/noetic/include/ros/assert.h

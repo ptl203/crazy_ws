@@ -58,7 +58,7 @@ crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus: /home/bitcraze/cra
 
 /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_backend/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bitcraze/crazy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp manifest code for crazy_backend"
-	cd /home/bitcraze/crazy_ws/build/crazy_backend && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_backend crazy_backend crazy_msgs std_msgs
+	cd /home/bitcraze/crazy_ws/build/crazy_backend && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_backend crazy_backend crazy_msgs std_msgs crazyswarm
 
 crazy_backend_generate_messages_eus: crazy_backend/CMakeFiles/crazy_backend_generate_messages_eus
 crazy_backend_generate_messages_eus: /home/bitcraze/crazy_ws/devel/share/roseus/ros/crazy_backend/manifest.l
