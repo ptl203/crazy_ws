@@ -53,7 +53,6 @@ add_message_files(
   ranger.msg
   stateEstimate.msg
   status.msg
-  nodeReady.msg
 )
 
 ## Generate services in the 'srv' folder

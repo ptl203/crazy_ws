@@ -1,17 +1,19 @@
 #include "ros/ros.h"
 #include <iostream>
 #include "crazy_msgs/status.h"
-#include "crazy_msgs/nodeReady.h"
+#include "std_msgs/Bool.h"
 #include "crazy_msgs/ranger.h"
 #include "crazyswarm/Takeoff.h"
 #include "crazyswarm/Land.h"
 
 class launchNode {
     public:
+        bool launch_ready, ranger_start;
+        int ranger_count;
         launchNode () 
         {
-            bool launch_ready, ranger_start = 0; 
-            int ranger_count = 0;
+            launch_ready, ranger_start = 0; 
+            ranger_count = 0;
             ros::Rate loop_rate(10);
 
             ROS_INFO("Create Subscribers");
@@ -21,8 +23,8 @@ class launchNode {
 
             ROS_INFO("Creating Publisher");
             //Creating Publisher to system_status
-            system_pub = n.advertise<crazy_msgs::status>("/system_status", 1000);
-            launch_pub = n.advertise<crazy_msgs::nodeReady>("/launch_ready", 1000);
+            mission_pub = n.advertise<crazy_msgs::status>("/mission_status", 1000);
+            launch_pub = n.advertise<std_msgs::Bool>("/launch_ready", 1000);
 
             ROS_INFO("Creating Service Clients");
             ros::ServiceClient takeoff_client = n.serviceClient<crazyswarm::Takeoff>("/cf1/takeoff");
@@ -30,11 +32,11 @@ class launchNode {
 
             while (ros::ok()) {
                 //Print Launch Ready
-                crazy_msgs::nodeReady launchReady;
+                std_msgs::Bool launchReady;
                 //Wait for existence of necessary services
                 takeoff_client.waitForExistence();
                 land_client.waitForExistence();
-                launchReady.status = 1;
+                launchReady.data = 1;
                 launch_pub.publish(launchReady);
                 ROS_INFO("Launch Ready");
                 if (launch_ready) {
@@ -56,10 +58,10 @@ class launchNode {
                         landMsg.request.height = 0.4;
                         landMsg.request.duration = ros::Duration(2.5);
                         land_client.call(landMsg);
-                        //Set system_status to Launched
+                        //Set mission_status to Launched
                         crazy_msgs::status statusMsg;
                         statusMsg.status = "LAUNCHED";
-                        system_pub.publish(statusMsg);
+                        mission_pub.publish(statusMsg);
                     } else{
                         ROS_INFO("Waiting for Ranger Trigger");
                     }
@@ -87,11 +89,8 @@ class launchNode {
         ros::NodeHandle n;
         ros::Subscriber system_sub;
         ros::Subscriber ranger_sub;
-        ros::Publisher system_pub;
+        ros::Publisher mission_pub;
         ros::Publisher launch_pub;
-        bool launch_ready;
-        bool ranger_start;
-        int ranger_count;
 };
 int main (int argc, char **argv) {
     ROS_INFO("Initializing node");
