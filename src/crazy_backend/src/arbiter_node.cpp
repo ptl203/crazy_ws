@@ -1,14 +1,16 @@
 #include "ros/ros.h"
 #include <iostream>
 #include "crazy_msgs/status.h"
-#include "crazy_msgs/nodeReady.h"
+#include "std_msgs/Bool.h"
 
 class arbiterNode {
     public:
-        bool launch_status, task_status, land_status = false;
+        bool launch_status, task_status, land_status;
         arbiterNode () 
         {
-            //Status Variables
+            launch_status = false;
+            task_status = false;
+            land_status = false;
             ros::Rate loop_rate(10);
 
             ROS_INFO("Create Subscribers");
@@ -29,7 +31,7 @@ class arbiterNode {
                 if (launch_status) { // Add && task_status && land_status later
                     statusMsg.status = "READY";
                     status_pub.publish(statusMsg);
-                    ROS_INFO("Set system_status to READY");
+                    ROS_INFO("Set system_status to READY"); 
                 } else {
                     statusMsg.status = "INITIALIZING";
                     status_pub.publish(statusMsg);
@@ -41,21 +43,21 @@ class arbiterNode {
             ros::spin();
         }
 
-        void launchCallback(const crazy_msgs::nodeReady& msg) 
+        void launchCallback(const std_msgs::Bool& msg) 
         {
             // Update launch_status variable
-            launch_status = msg.status;
+            launch_status = msg.data;
             ROS_INFO("Callback launch status is %d", launch_status);
         }
-        void taskCallback(const crazy_msgs::nodeReady& msg) 
+        void taskCallback(const std_msgs::Bool& msg) 
         {
             // Update launch_status variable
-            task_status = msg.status;
+            task_status = msg.data;
         }
-        void landCallback(const crazy_msgs::nodeReady& msg) 
+        void landCallback(const std_msgs::Bool& msg) 
         {
             // Update launch_status variable
-            land_status = msg.status;
+            land_status = msg.data;
         }
     private:
         ros::NodeHandle n;
