@@ -1,2 +1,0 @@
-crazy_backend:crazy_msgs
--DCATKIN_DEVEL_PREFIX=/home/bitcraze/crazy_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bitcraze/crazy_ws/install -G Unix Makefiles
